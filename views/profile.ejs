@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Profile</title>
+</head>
+<body>
+<h1>Profile</h1>
+<p><%=email%></p>
+<form action="/auth/profile" method="POST">
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="newPassword" placeholder="New Password" required>
+    <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+    <button>Change password</button>
+    <a href="/auth/dashboard">Dashboard</a>
+</form>
+</body>
+</html>
